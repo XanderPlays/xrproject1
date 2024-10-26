@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Preferences</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Newsletter Preferences</h2>
+        <form action="submit_newsletter_preferences" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Tech" id="tech">
+                <label class="form-check-label" for="tech">
+                    Tech
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Health" id="health">
+                <label class="form-check-label" for="health">
+                    Health
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Finance" id="finance">
+                <label class="form-check-label" for="finance">
+                    Finance
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Sports" id="sports">
+                <label class="form-check-label" for="sports">
+                    Sports
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Entertainment" id="entertainment">
+                <label class="form-check-label" for="entertainment">
+                    Entertainment
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            <div id="errorMessage" class="text-danger mt-3"></div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
